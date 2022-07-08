@@ -1,0 +1,29 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  /* box-sizing : padding값을 갖게 되더라도 기존의 box 사이즈를 변경하지 않도록 지시 */
+  box-sizing: border-box;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  color: #2e363e;
+}
+
+.nav__a {
+  position: relative;
+  /* notification의 'relatvie를 가진 가장 가까운 부모'로 변경 (or else <body> 전체가 기준이 됨)*/
+}
+
+.nav__notification {
+  position: absolute;
+  /* position:absolute는 가장 가까운 부모 기준으로 위치가 세부조정 
+  (그러므로 바로 위 nav__a를 relative를 가진 가장 가까운 부모로 만들어줌으로써 notification 오류 해결 */
+  left: 12px;
+  bottom: 12px;
+}

@@ -1,0 +1,4 @@
+.chats-user-component__underline {
+  border-bottom: var(--main-border);
+  padding-bottom: 20px;
+}

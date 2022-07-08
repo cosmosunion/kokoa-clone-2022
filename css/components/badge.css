@@ -1,0 +1,21 @@
+.badge {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px; /* 사각형->원 : border-radius: (width의 1/2값)px; */
+  color: white;
+  font-weight: 500;
+}
+
+.badge_update {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  left: 87px;
+  bottom: 18px;
+}

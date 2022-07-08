@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- link:css 엔터, 폴더명(css)추가 -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +20,7 @@
       </div>
       <div class="status-bar__column">
         <span>110%</span>
-        <!-- Battery icon-->
+        <!-- Battery icon: 해당 태그는 2개의 클래스를 갖는다(fa-solid와 fa-battery-full)-->
         <i class="fa-solid fa-battery-full"></i>
         <!-- Lightining icon -->
         <i class="fa-solid fa-bolt-lightning"></i>
@@ -34,7 +34,10 @@
         If you have a KoKoa Acount, log in with your email or phone number.
       </p>
     </header>
-    <form id="login-form">
+    <!-- action : 어떤 페이지로 data를 보낼건지
+         method : 2개 방식 (1.post:백엔드 서버에 정보를 전송하는 방식/
+                           2.get: 다른 html 페이지 *아이디/비번 노출되지 않도록 조심 )-->
+    <form action="friends.html" method="get" id="login-form">
       <input type="text" placeholder="Email or phone number" />
       <input type="password" placeholder="Password" />
       <input type="submit" value="Log in" />

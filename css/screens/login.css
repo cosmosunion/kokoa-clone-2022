@@ -1,0 +1,56 @@
+.welcome-header {
+  margin: 90px 0px;
+  /* display:flex, justify-content:center 을 이용할 수 있지만 
+     구성요소들이 <h1>,<p>같은 텍스트기에 text-align:center 사용 가능 */
+  text-align: center;
+  /* <p> 내용이 화면대비 일정 너비(width)를 차지하면서 center 정렬 */
+  display: flex;
+  flex-direction: column; /* default value: row */
+  align-items: center;
+}
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.welcome-header__text {
+  width: 70%;
+  opacity: 0.7;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+  text-align: center;
+}
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+/*  */
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3); /* 30% opacity */
+  transition: border-color 0.3s ease-in-out;
+}
+/*콜론(:)1개 = 상태(state)의미 / 콜론 2개 = 세부 요소 지정 */
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  /* 커서모양 변경가능 (예: pointer, not-allowed, progress)*/
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+#login-form a {
+  text-decoration: none;
+  color: inherit; /* 해당 속성을 상속(inherit)받아 부모속성과 같아진다 (예: <div>의 default color = black) */
+  font-size: 15px;
+}

@@ -1,0 +1,29 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  margin-bottom: 18px;
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+  /* screen-header이랑 같은 좌/우 padding 값을 가짐 (:root를 통해 저장된 variable) */
+}
+
+.friends-screen__channel {
+  border-top: var(--main-border);
+  margin-top: 25px;
+  padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}

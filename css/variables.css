@@ -1,0 +1,5 @@
+:root {
+  --yellow: #ffe809; /* 카카오톡 BI 컬러를 설정에 추가 (중요: styels.css에 반드시 import) */
+  --horizontal-space: 25px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.5);
+}

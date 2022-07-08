@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import "reset.css"; /* 뼈대를 보여주는 html보다 css에 추가하는 것이 적절*/
+@import "variables.css"; /* 메인 BI 컬러를 세부설정한 variables.css 불러오기 */
+/* Components*/
+@import "components/status-bar.css"; /* 모든 웹 페이지에 상태바가 존재하게 될 것이므로 파일화가 적절 */
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css"; /* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "components/badge.css";
+@import "screens/chats.css";
+@import "screens/find.css";
+/* styles.css에는 웹페이지 전체에 일괄적으로 적용되는 속성은 그대로 표현*/
 body {
-  background-color: tomato;
+  color: #2e363e;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 700;
+}
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }

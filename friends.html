@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- link:css 엔터, 폴더명(css)추가 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends-Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <!-- To Do : wifi icon -->
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <!-- Battery icon: 해당 태그는 2개의 클래스를 갖는다(fa-solid와 fa-battery-full)-->
+        <i class="fa-solid fa-battery-full"></i>
+        <!-- Lightining icon -->
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+    </div>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-solid fa-music fa-lg"></i></span>
+        <span><i class="fa-solid fa-gear fa-lg"></i></span>
+      </div>
+    </header>
+    <a id="friends-display-link" href="#"
+      ><i class="fa-solid fa-circle-info"></i> Friend's Names Display
+      <i class="fa-solid fa-angle-right fa-xs"></i
+    ></a>
+    <main class="friends-screen">
+      <!-- user-components : photo, name (+subtitle, icon)-->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://www.gardeningknowhow.com/wp-content/uploads/2011/05/cosmos1.jpg"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Nicolas</h4>
+            <!--<h6 class="user-component__subtitle">whatever it is</h6> 
+              주석처리 후 필요할 때 사용-->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fa-solid fa-angle-up"></i>
+        </div>
+
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://cdn.britannica.com/36/82536-050-7E968918/Shasta-daisies.jpg"
+              class="user-component__avatar user-component__avatar-sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Channel
+              </h4>
+              <!--<h6 class="user-component__subtitle">whatever it is</h6> 
+                주석처리 후 필요할 때 사용-->
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <!-- user-component__column:last-child이 아닌 <div>가 부모 요소가 되어 flex-end영향을 받지 않음-->
+              <span>2</span>
+              <i class="fa-solid fa-angle-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- navigation bar
+      tag와 class의 이름이 같아도 ok -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <!-- Friends, Chats, Search, Find 텍스트를 이모티콘으로 변경 -->
+          <a class="nav__a" href="friends.html"
+            ><i class="fa-solid fa-user fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__a" href="chats.html"
+            ><span class="nav__notification badge">1</span
+            ><i class="fa-regular fa-comment fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__a" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__a" href="more.html"
+            ><i class="fa-solid fa-ellipsis fa-lg"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/3e809e2e54.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fontawesome에서 제공하는 script는 항상 마지막에; body태그를 닫기 직전 -->
+  </body>
+</html>

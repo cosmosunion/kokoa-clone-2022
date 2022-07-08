@@ -1,0 +1,31 @@
+.status-bar {
+  display: flex; /* 상태바의 요소들을 horizontally 한 줄로 배열하기 위해 */
+  /* column들의 width가 같지 않기 때문에 space-between으로 배열시 가운데 column이 정중앙에 오지 않음 -> css hack 이용 */
+  justify-content: center;
+  padding: 5px 3px;
+}
+/* < 방법 > 
+      1. 모든 column이 속한 div의 속성을 중앙정렬( justify-content: center )
+      2. 모든 column들이 화면 전체의 1/3 비율을 갖게 적용 ( width: 33% )
+      3. 중앙 column(전체 column 중 두번째)만 화면 전체 기준 중앙 정렬 
+      4. 마지막 column을 오른쪽 정렬 (첫번째 column은 1번에 의해 적절한 시작점에 자동 배열된다. */
+
+.status-bar__column {
+  width: 33%;
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-bar__column .fa-battery-full {
+  /* 아이콘이 갖는 클래스 중 2번째: fa-battery-full */
+  margin: 0px 5px;
+}
