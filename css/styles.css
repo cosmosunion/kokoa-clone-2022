@@ -5,7 +5,9 @@
 @import "components/status-bar.css"; /* 모든 웹 페이지에 상태바가 존재하게 될 것이므로 파일화가 적절 */
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
-@import "components/user-component.css"; /* Screens */
+@import "components/user-component.css";
+@import "components/icon-row.css";
+/* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "components/badge.css";
@@ -19,4 +21,5 @@ body {
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
+  /* screen-header이랑 같은 좌/우 padding 값을 가짐 (:root를 통해 저장된 variable) */
 }

@@ -7,12 +7,7 @@
 }
 
 #friends-display-link i {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.friends-screen {
-  padding: 0px var(--horizontal-space);
-  /* screen-header이랑 같은 좌/우 padding 값을 가짐 (:root를 통해 저장된 variable) */
+  color: var(--gray);
 }
 
 .friends-screen__channel {
@@ -25,5 +20,5 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--gray);
 }

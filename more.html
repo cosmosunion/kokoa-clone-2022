@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends-Kokoa Clone</title>
+    <title>More-Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -27,19 +27,15 @@
       </div>
     </div>
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
         <span><i class="fa-solid fa-music fa-lg"></i></span>
         <span><i class="fa-solid fa-gear fa-lg"></i></span>
       </div>
     </header>
-    <a id="friends-display-link" href="#"
-      ><i class="fa-solid fa-circle-info"></i> Friend's Names Display
-      <i class="fa-solid fa-angle-right fa-xs"></i
-    ></a>
-    <main class="friends-screen">
-      <!-- user-components : photo, name (+subtitle, icon)-->
+
+    <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
@@ -48,36 +44,26 @@
           />
           <div class="user-component__text">
             <h4 class="user-component__title">Nicolas</h4>
-            <!--<h6 class="user-component__subtitle">whatever it is</h6> 
-              주석처리 후 필요할 때 사용-->
+            <h6 class="user-component__subtitle">+ 123 456 789</h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="user-component__column">
+          <i class="fa-regular fa-message fa-xl"></i>
+        </div>
       </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fa-solid fa-angle-up"></i>
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-calendar-check fa-2x"></i><span>Calendar</span>
         </div>
-
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="https://cdn.britannica.com/36/82536-050-7E968918/Shasta-daisies.jpg"
-              class="user-component__avatar user-component__avatar-sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
-              <!--<h6 class="user-component__subtitle">whatever it is</h6> 
-                주석처리 후 필요할 때 사용-->
-            </div>
-          </div>
-          <div class="user-component__column">
-            <span>2</span>
-            <i class="fa-solid fa-angle-right fa-xs"></i>
-          </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-face-kiss-wink-heart fa-2x"></i></i
+          ><span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-brush fa-2x"></i><span>Themes</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-id-badge fa-2x"></i><span>Account</span>
         </div>
       </div>
     </main>
@@ -89,12 +75,12 @@
         <li class="nav__btn">
           <!-- Friends, Chats, Search, Find 텍스트를 이모티콘으로 변경 -->
           <a class="nav__a" href="friends.html"
-            ><i class="fa-solid fa-user fa-lg"></i
+            ><i class="fa-regular fa-user fa-lg"></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__a" href="chats.html"
-            ><span class="nav__notification">1</span
+            ><span class="nav__notification badge">1</span
             ><i class="fa-regular fa-comment fa-lg"></i
           ></a>
         </li>
