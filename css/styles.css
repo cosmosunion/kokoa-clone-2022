@@ -7,12 +7,14 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/icon-row.css";
+@import "components/alt-screen-header";
+@import "components/badge.css";
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
-@import "components/badge.css";
 @import "screens/chats.css";
 @import "screens/find.css";
+@import "screens/more.css";
 /* styles.css에는 웹페이지 전체에 일괄적으로 적용되는 속성은 그대로 표현*/
 body {
   color: #2e363e;
@@ -20,6 +22,6 @@ body {
   font-weight: 700;
 }
 .main-screen {
-  padding: 0px var(--horizontal-space);
+  padding: var(--horizontal-space);
   /* screen-header이랑 같은 좌/우 padding 값을 가짐 (:root를 통해 저장된 variable) */
 }

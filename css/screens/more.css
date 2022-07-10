@@ -1,0 +1,37 @@
+/* 다른 웹페이지에서 반복적으로 사용되는 코드는 margin/padding/border등의 값이 일괄적으로 적용되므로
+해당 스크린에서만 적용되는 별도의 css 파일을 생성 후 적용 */
+
+.more-screen .icon-row {
+  margin-top: 35px;
+}
+.more-suggestions {
+  margin-top: 50px;
+  border-top: var(--main-border);
+  padding-top: 20px;
+}
+.more-suggestions__title {
+  margin-bottom: 30px;
+}
+.more-suggestions__icons {
+  display: flex;
+}
+.more-suggestions__icon {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.more-suggestios__icon-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.more-suggestios__icon-image i {
+  font-size: 30px;
+  color: white;
+}
