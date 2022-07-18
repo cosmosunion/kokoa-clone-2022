@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;600;900&display=swap");
+
+:root {
+  --main-margin: 5px 0;
+  --pink: rgb(255, 158, 206);
+  --shadow-bold: 0 8px 15px var(--pink);
+  --shadow-light-black: 0 1px 10px rgba(0, 0, 0, 0.3);
+  --shadow-light-pink: 0 3px 10px var(--pink);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: #f7f7f7;
+  max-width: 760px;
+  max-height: 1650px;
+  padding: 60px;
+  margin: 0 auto; /* max-width가 정해진 상태에서 '중앙정렬' */
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-page {
+  background-color: white;
+  width: 280px;
+  height: 600px;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  height: 35px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header i {
+  width: 50%;
+  padding: 0 5px;
+  color: var(--pink);
+}
+
+header i:last-child {
+  text-align: right;
+}
+
+/* left-page */
+/* 선택된 아티스트 정보 */
+.featured-artist {
+  height: 145px;
+  margin: var(--main-margin);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-artist__photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-bold);
+}
+.featured-artist__data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+.featured-artist__data-singer {
+  font-size: 22px;
+}
+.featured-artist__data-category {
+  margin: 5px 0;
+  font-size: 13px;
+  color: var(--pink);
+}
+
+/* shuffle & likes 버튼 */
+.featured-artist-actions {
+  height: 45px;
+  padding: 25px 30px;
+  margin: var(--main-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-artist-actions__button {
+  width: 90px;
+  height: 35px;
+  background-color: black;
+  border-radius: 30px;
+  font-size: 14px;
+}
+.featured-artist-actions__button:first-child {
+  color: var(--pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured-artist-actions__button:last-child {
+  padding: 0 15px;
+  background-color: var(--pink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 노래 리스트 */
+.featured-artist-album {
+  height: 250px;
+  margin: var(--main-margin);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featured-artist-album__data {
+  height: 50px;
+  padding: 0 15px;
+  margin: 5px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-artist-album__data:hover {
+  box-shadow: var(--shadow-light-pink);
+}
+
+.featured-artist-album__data-cover {
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+}
+.featured-artist-album__data-info {
+  width: 150px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.featured-artist-album__data-info__artist {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--pink);
+}
+.featured-artist-album__data-info__song {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* 뮤직플레이어 */
+.featured-artist-song__playing {
+  height: 50px;
+  padding: 0 15px;
+  margin-top: 5px;
+  background-color: black;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-artist-song__playing-info {
+  height: 40px;
+  padding: 3px 5px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.featured-artist-song__playing-info span:first-child {
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+}
+.featured-artist-song__playing-info span:last-child {
+  color: var(--pink);
+  font-size: 16px;
+}
+.featured-artist-song__playing-control {
+  width: 70px;
+  height: 40px;
+  color: var(--pink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* right-page */
+/* 선택된 곡 플레이어 */
+.featured-song__playing {
+  height: 280px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-song__playing img {
+  box-shadow: 0 15px 25px var(--pink);
+}
+.featured-song__playing-info {
+  height: 45px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-song__playing-info__artist {
+  font-size: 13px;
+  color: var(--pink);
+}
+
+.featured-artist-album__data-cover__playing {
+  width: 180px;
+  height: 180px;
+  border-radius: 15px;
+}
+
+/* scale */
+.featured-song__playing__scale .play-time {
+  width: 240px;
+}
+.featured-song__playing__scale div {
+  width: auto;
+  font-size: 12px;
+  color: var(--pink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured-song__playing__control {
+  height: 45px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-song__playing__control i:nth-child(1),
+.featured-song__playing__control i:nth-child(5) {
+  color: var(--pink);
+}
+
+input[type="range"] {
+  width: 240px;
+  -webkit-appearance: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  background: rgba(0, 0, 0, 0.1);
+  height: 4px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: -2px;
+  background: black;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: var(--pink);
+}

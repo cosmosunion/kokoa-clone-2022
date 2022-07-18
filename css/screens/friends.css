@@ -22,3 +22,15 @@
   justify-content: space-between;
   color: var(--gray);
 }
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute; /* 모든 것의 위에 있음을 의미 */
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}

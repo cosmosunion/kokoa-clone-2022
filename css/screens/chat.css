@@ -1,0 +1,142 @@
+#chat-screen {
+  background-color: #abc1d1;
+  height: 1500vh;
+  position: relative;
+}
+#chat-screen .alt-header,
+#chat-screen .status-bar {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #abc1d1;
+  box-sizing: border-box;
+}
+#chat-screen .status-bar {
+  z-index: 2; /*z-index로 layer 순서 설정 - status-bar가 위로 오게 함 */
+}
+#chat-screen .alt-header {
+  top: 10px;
+  z-index: 1;
+}
+.main-chat {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat__timestamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 8px 15px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.message-row img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message__author {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  background-color: white;
+  font-size: 18px;
+  padding: 8px 13px;
+  border-radius: 10px;
+  border-top-left-radius: 0px; /* box 테두리 개별 설정 */
+  margin-right: 5px;
+}
+.message__time,
+.message__author {
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 10px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+/* order로도 순서 설정(default:0) - flex children에만 적용 가능 
+   but 코드가 길어지기 때문에 row-reverse로 대체*/
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.reply i {
+  opacity: 0.5;
+}
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%; /* column의 width값을 주지 않으면 .reply input에 widtH: 100%가 적용되지 x */
+  position: relative;
+}
+.reply input {
+  padding: 10px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -16px;
+  top: 3px;
+}
+
+.reply .reply__column:last-child > i {
+  right: 20px;
+  top: 17px;
+}
+
+.reply__column button {
+  background-color: var(--yellow);
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+
+.reply__column button i {
+  opacity: 1;
+}

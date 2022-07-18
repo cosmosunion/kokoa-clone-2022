@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="homework5.css" />
+  </head>
+  <body>
+    <main>
+      <!-- 아티스트 프로필과 곡 리스트-->
+      <div class="main-page">
+        <header>
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </header>
+        <section class="featured-artist">
+          <img
+            class="featured-artist__photo"
+            src="blackpink-photos/jennie-main.jpg"
+          />
+          <div class="featured-artist__data">
+            <h1 class="featured-artist__data-singer">Jennie, Blackpink</h1>
+            <h3 class="featured-artist__data-category">Rap, Hip-Hop, Pop</h3>
+          </div>
+        </section>
+        <section class="featured-artist-actions">
+          <div class="featured-artist-actions__button">
+            <span>shuffle</span>
+          </div>
+          <div class="featured-artist-actions__button">
+            <i class="fa-solid fa-heart"></i>
+            <span>212 971</span>
+          </div>
+        </section>
+        <section class="featured-artist-album">
+          <div class="featured-artist-album__data">
+            <img
+              src="blackpink-photos/solo.png"
+              class="featured-artist-album__data-cover"
+            />
+            <div class="featured-artist-album__data-info">
+              <span class="featured-artist-album__data-info__artist"
+                >Jennie, Blackpink</span
+              >
+              <span class="featured-artist-album__data-info__song">Solo</span>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="featured-artist-album__data">
+            <img
+              src="blackpink-photos/icecream.jpg"
+              class="featured-artist-album__data-cover"
+            />
+            <div class="featured-artist-album__data-info">
+              <span class="featured-artist-album__data-info__artist"
+                >Jennie, Blackpink</span
+              >
+              <span class="featured-artist-album__data-info__song"
+                >Ice Cream</span
+              >
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="featured-artist-album__data">
+            <img
+              src="blackpink-photos/lovesick-girls.jpg"
+              class="featured-artist-album__data-cover"
+            />
+            <div class="featured-artist-album__data-info">
+              <span class="featured-artist-album__data-info__artist"
+                >Jennie, Blackpink</span
+              >
+              <span class="featured-artist-album__data-info__song"
+                >Lovesick Girls</span
+              >
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="featured-artist-album__data">
+            <img
+              src="blackpink-photos/kill-this-love.jpg"
+              class="featured-artist-album__data-cover"
+            />
+            <div class="featured-artist-album__data-info">
+              <span class="featured-artist-album__data-info__artist"
+                >Jennie, Blackpink</span
+              >
+              <span class="featured-artist-album__data-info__song"
+                >Kill This Love</span
+              >
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </section>
+        <section class="featured-artist-song__playing">
+          <div class="featured-artist-song__playing-info">
+            <span class="featured-artist-album__data-info__artist"
+              >Jennie, Blackpink</span
+            >
+            <span class="featured-artist-album__data-info__song"
+              >Ice Cream</span
+            >
+          </div>
+          <div class="featured-artist-song__playing-control">
+            <i class="fa-solid fa-backward-step fa-xs"></i>
+            <i class="fa-solid fa-pause"></i>
+            <i class="fa-solid fa-forward-step fa-xs"></i>
+          </div>
+        </section>
+      </div>
+
+      <!-- 플레이 화면-->
+      <div class="main-page">
+        <header>
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </header>
+        <section class="featured-song__playing">
+          <img
+            src="blackpink-photos/icecream.jpg"
+            class="featured-artist-album__data-cover__playing"
+          />
+          <div class="featured-song__playing-info">
+            <div class="featured-song__playing-info__song">Ice Cream</div>
+            <div class="featured-song__playing-info__artist">
+              Jennie, Blackpink
+            </div>
+          </div>
+        </section>
+        <section class="featured-song__playing__scale">
+          <div class="play-time">
+            <div class="current-time">1:56</div>
+            <div class="duration-time">2:21</div>
+          </div>
+          <input type="range" class="featured-song__playing__scale-control" />
+        </section>
+        <section class="featured-song__playing__control">
+          <i class="fa-solid fa-repeat"></i>
+          <i class="fa-solid fa-backward-step fa-lg"></i>
+          <i class="fa-solid fa-circle-play fa-2x"></i>
+          <i class="fa-solid fa-forward-step fa-lg"></i>
+          <i class="fa-solid fa-shuffle"></i>
+        </section>
+      </div>
+      <script
+        src="https://kit.fontawesome.com/3e809e2e54.js"
+        crossorigin="anonymous"
+      ></script>
+    </main>
+  </body>
+</html>

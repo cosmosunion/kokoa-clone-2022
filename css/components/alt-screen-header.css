@@ -1,5 +1,32 @@
 .alt-header {
-  width: 500px;
-  height: 500px;
-  background-color: tomato;
+  padding: var(--horizontal-space);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 중앙정렬 방법 : 
+    3개의 alt-header__column들이 각각 전체의 33%의 width를 갖게 하고,
+    가운데는 중앙정렬 / 양쪽은 auto로 양끝에 위치 */
+.alt-header__column {
+  width: 33%;
+}
+/* 가운데 값은 정 가운데에 위치하고 나머지 양끝으로 위치시키는 방법 : auto 이용*/
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+.alt-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.alt-header__column span:last-child {
+  margin-left: 20px;
 }
