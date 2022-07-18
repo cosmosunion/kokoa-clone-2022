@@ -43,7 +43,8 @@
   border-color: var(--yellow);
 }
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  color: var(--pink-light);
+  background-color: black;
   /* 커서모양 변경가능 (예: pointer, not-allowed, progress)*/
   cursor: pointer;
   padding: 20px 0px;
