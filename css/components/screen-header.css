@@ -20,3 +20,16 @@
 .screen-header__icons span:nth-child(3) {
   position: relative;
 }
+
+@keyframes rotateSolid {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-gear:hover {
+  animation: rotateSolid 2s linear infinite;
+}
