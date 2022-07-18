@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f9f9fa;
+  background-color: black;
   padding: 20px 50px;
   /* box-sizing : padding값을 갖게 되더라도 기존의 box 사이즈를 변경하지 않도록 지시 */
   box-sizing: border-box;
@@ -12,7 +12,7 @@
 .nav__list {
   display: flex;
   justify-content: space-between;
-  color: #2e363e;
+  color: var(--pink-light);
 }
 
 .nav__a {

@@ -1,13 +1,14 @@
 #friends-display-link {
   text-align: center;
   display: block;
-  background-color: #fafafa;
+  color: var(--pink-light);
+  background-color: black;
   padding: 15px 0px;
   margin-bottom: 18px;
 }
 
 #friends-display-link i {
-  color: var(--gray);
+  color: var(--pink-light);
 }
 
 .friends-screen__channel {
@@ -20,7 +21,23 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  color: var(--gray);
+  color: black;
+}
+
+@keyframes sparkle {
+  0% {
+    color: black;
+  }
+  50% {
+    color: var(--pink-light);
+  }
+  100% {
+    color: black;
+  }
+}
+
+.friends-screen__channel-header {
+  animation: sparkle 2s linear infinite;
 }
 
 @keyframes hideSplashScreen {
@@ -34,7 +51,7 @@
 }
 
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: var(--pink-light);
   position: absolute; /* 모든 것의 위에 있음을 의미 */
   height: 100vh;
   width: 100vw;
@@ -43,7 +60,7 @@
   justify-content: center;
   align-items: center;
   font-size: 100px;
-  animation: hideSplashScreen 0.5s ease-in-out forwards;
+  animation: hideSplashScreen 1s ease-in-out forwards;
   /* forwards : 마지막 속성 값(opacity:0)이 애니메이션이 끝나고도 유지됨 */
   animation-delay: 0.6s;
 }
